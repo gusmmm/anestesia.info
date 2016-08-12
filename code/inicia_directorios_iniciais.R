@@ -7,5 +7,6 @@ dp <- getwd()
 dd <- paste0(dp,"/data/")
 # directorio de output - do
 do <- paste0(dp,"/output/")
-
+# directorio de codigo
+dc <- paste0(dp,"/code/")
 
