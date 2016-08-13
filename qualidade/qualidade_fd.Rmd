@@ -39,4 +39,30 @@ tipo_anestesia
 ```{r ALR, echo=FALSE}
 ALR
 ```
+```{r echo=FALSE}
+print("Especialidade")
+table(fd$Especialidade)
+print("Diagnóstico")
+table(fd$Diagnóstico)
+print("Cirurgia")
+table(fd$Cirurgia)
+print("Admissao")
+table(fd$Admissão)
+print("Genero")
+table(fd$Género)
+print("Idade")
+table(fd$Idade)
+print("Combinada")
+table(fd$`Combinada?`)
+print("Via aérea")
+table(fd$`Via aérea`)
+print("Técnicas e monitorizaçao")
+table(fd$`Técnicas e monitorização`)
+print("Acidentes e complicaçoes")
+table(fd$`Acidentes e complicações`)
+print("Alergias")
+table(fd$Alergias)
+print("ASA")
+table(fd$ASA)
+```
 
