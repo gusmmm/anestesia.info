@@ -15,6 +15,9 @@ if(opcao == "gg"){
   gap <- gs_url(link)
   # grava o objecto chamado resultados
   gap %>% gs_read(ws=1) -> fd
+  rm(gap)
+  rm(link)
+  rm(opcao)
 } else if(opcao == "data"){
   # ficheiro com os dados originais - fd
   fd <- paste0(dd,list.files(dd))[1]
