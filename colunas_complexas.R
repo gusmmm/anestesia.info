@@ -21,8 +21,16 @@ source(paste0(dc,"carrega_regex_tipo_anestesia.R"))
 tipo_anestesia$hits <- f_cria_coluna_hits(tipo_anestesia_regex$conceito,tipo_anestesia_regex$exp_reg,tipo_anestesia$conceito)
 
 
-# ALR
+### ALR ###
 ALR <- f_tab_id_conceito(fic_dados = fd,coluna = "Bloqueio de Nervos Periféricos/Plexo")
+# cria a ALR_regex
+source(paste0(dc,"carrega_regex_ALR.R"))
+# cria a coluna hits com o conceito final usando a expressao regular
+ALR$hits <- f_cria_coluna_hits(ALR_regex$conceito,ALR_regex$exp_reg,ALR$conceito)
+
+
+
+
 
 # grava as tabelas
 save(patologia_previa,file = paste0(do,"patologia_previa.Rdata"))
