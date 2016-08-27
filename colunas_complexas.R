@@ -29,13 +29,17 @@ source(paste0(dc,"carrega_regex_ALR.R"))
 ALR$hits <- f_cria_coluna_hits(ALR_regex$conceito,ALR_regex$exp_reg,ALR$conceito)
 
 
-
+### cirurgia ###
+cirurgia <- f_tab_id_conceito(fic_dados = fd,coluna = "Cirurgia")
+source(paste0(dc,"carrega_regex_cirurgia.R"))
+cirurgia$hits <- f_cria_coluna_hits(cirurgia_regex$conceito,cirurgia_regex$exp_reg,cirurgia$conceito)
 
 
 # grava as tabelas
 save(patologia_previa,file = paste0(do,"patologia_previa.Rdata"))
 save(tipo_anestesia,file = paste0(do,"tipo_anestesia.Rdata"))
 save(ALR,file = paste0(do,"ALR.Rdata"))
+save(cirurgia,file = paste0(do,"cirurgia.Rdata"))
 
 # grava o ambiente global gerado
 save.image(file=paste0(do,"tudo.RData"))

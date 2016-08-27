@@ -122,7 +122,7 @@ $(document).ready(function () {
 
 <div id="analise-de-qualidade-dos-dados-extraidos-da-folha-com-os-dados-originais---fd" class="section level2">
 <h2>Analise de qualidade dos dados extraidos da folha com os dados originais - fd</h2>
-<pre><code>## [1] &quot;Numero de actos anestesicos: 3&quot;</code></pre>
+<pre><code>## [1] &quot;Numero de actos anestesicos: 5&quot;</code></pre>
 <pre><code>## [1] &quot;Numero de colunas: 18&quot;</code></pre>
 <pre><code>##  [1] &quot;Carimbo de data/hora&quot;                
 ##  [2] &quot;Especialidade&quot;                       
@@ -154,24 +154,29 @@ $(document).ready(function () {
 ##                    Tipo de Anestesia                           Combinada? 
 ##                                    0                                    0 
 ## Bloqueio de Nervos Periféricos/Plexo                            Via aérea 
-##                                    2                                    0 
+##                                    2                                    2 
 ##             Técnicas e monitorização             Acidentes e complicações 
-##                                    2                                    3 
+##                                    4                                    5 
 ##                                Notas                             Alergias 
-##                                    3                                    2 
+##                                    5                                    4 
 ##                                  ASA                                   id 
 ##                                    2                                    0</code></pre>
 </div>
 <div id="patologia-previa" class="section level2">
 <h2>patologia previa</h2>
-<pre><code>##   id                           conceito                    hits
-## 1  1                             Anemia                  anemia
-## 2  1                               DPOC                    DPCO
-## 3  1                   doença coronária        doenca_coronaria
-## 4  2                               DPOC                    DPCO
-## 5  2                   Doença coronária        doenca_coronaria
-## 6  2                                Dm2 diabetes_mellitus_tipo2
-## 7  3 Parkinson Periplagia Obesidade HTA</code></pre>
+<pre><code>##    id                           conceito                    hits
+## 1   1                             Anemia                  anemia
+## 2   1                               DPOC                    DPCO
+## 3   1                   doença coronária        doenca_coronaria
+## 4   2                               DPOC                    DPCO
+## 5   2                   Doença coronária        doenca_coronaria
+## 6   2                                Dm2 diabetes_mellitus_tipo2
+## 7   3 Parkinson Periplagia Obesidade HTA                        
+## 8   4                               DOAD                        
+## 9   5                               DPOC                    DPCO
+## 10  5                                ICC                        
+## 11  5                        EAM em 2014                        
+## 12  5                                Hta</code></pre>
 </div>
 <div id="tipo_anestesia" class="section level2">
 <h2>tipo_anestesia</h2>
@@ -181,12 +186,20 @@ $(document).ready(function () {
 ## 3  2           Anestesia Geral Balanceada
 ## 4  2                      Epidural Lombar
 ## 5  3                                  MAC
+## 6  4                                  BSA
+## 7  4 Bloqueio de Nervos Periféricos/Plexo
+## 8  5                                  BSA
+## 9  5 Bloqueio de Nervos Periféricos/Plexo
 ##                                           hits
 ## 1                                          BSA
 ## 2 bloqueio_nervos_perifericos : bloqueio_plexo
 ## 3                   anestesia_geral_balanceada
 ## 4                              epidural_lombar
-## 5                                          MAC</code></pre>
+## 5                                          MAC
+## 6                                          BSA
+## 7 bloqueio_nervos_perifericos : bloqueio_plexo
+## 8                                          BSA
+## 9 bloqueio_nervos_perifericos : bloqueio_plexo</code></pre>
 </div>
 <div id="alr" class="section level2">
 <h2>ALR</h2>
@@ -194,35 +207,43 @@ $(document).ready(function () {
 ## 1  1                 Nervo Femoral          femoral_nervo
 ## 2  1 Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo
 ## 3  2                          &lt;NA&gt;                   &lt;NA&gt;
-## 4  3                          &lt;NA&gt;                   &lt;NA&gt;</code></pre>
+## 4  3                          &lt;NA&gt;                   &lt;NA&gt;
+## 5  4                 Nervo Femoral          femoral_nervo
+## 6  4 Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo
+## 7  5                 Nervo Femoral          femoral_nervo
+## 8  5 Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo</code></pre>
 <pre><code>## [1] &quot;Especialidade&quot;</code></pre>
 <pre><code>## 
 ## Cirurgia Geral      Ortopedia 
-##              2              1</code></pre>
+##              2              3</code></pre>
 <pre><code>## [1] &quot;Diagnóstico&quot;</code></pre>
 <pre><code>## 
-##             Fournier isquemia mesentérica       # trocantérica 
-##                    1                    1                    1</code></pre>
+##             Fournier       Fratura de PTA isquemia mesentérica 
+##                    1                    1                    1 
+##       # trocanterica       # trocantérica 
+##                    1                    1</code></pre>
 <pre><code>## [1] &quot;Cirurgia&quot;</code></pre>
 <pre><code>## 
 ##                      7S laparotomia exploradora           Limpeza vácuo 
-##                       1                       1                       1</code></pre>
+##                       2                       1                       1 
+##          Revisão de PTA 
+##                       1</code></pre>
 <pre><code>## [1] &quot;Admissao&quot;</code></pre>
 <pre><code>## 
 ## Urgente 
-##       3</code></pre>
+##       5</code></pre>
 <pre><code>## [1] &quot;Genero&quot;</code></pre>
 <pre><code>## 
-## Masculino 
-##         3</code></pre>
+##  Feminino Masculino 
+##         2         3</code></pre>
 <pre><code>## [1] &quot;Idade&quot;</code></pre>
 <pre><code>## 
 ## 61a-75a    &gt;75a 
-##       1       2</code></pre>
+##       3       2</code></pre>
 <pre><code>## [1] &quot;Combinada&quot;</code></pre>
 <pre><code>## 
 ## Não Sim 
-##   1   2</code></pre>
+##   1   4</code></pre>
 <pre><code>## [1] &quot;Via aérea&quot;</code></pre>
 <pre><code>## 
 ## Cânula nasal           MF        TOT 8 
@@ -239,8 +260,8 @@ $(document).ready(function () {
 ##          1</code></pre>
 <pre><code>## [1] &quot;ASA&quot;</code></pre>
 <pre><code>## 
-## 3 
-## 1</code></pre>
+## 2 3 
+## 1 2</code></pre>
 </div>
 
 
