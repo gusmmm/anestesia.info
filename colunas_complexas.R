@@ -43,3 +43,4 @@ save(cirurgia,file = paste0(do,"cirurgia.Rdata"))
 
 # grava o ambiente global gerado
 save.image(file=paste0(do,"tudo.RData"))
+
