@@ -5,6 +5,7 @@ link <- "https://docs.google.com/spreadsheets/d/1aRGDH64Ima4-d2Xf_vxXicESbMpTtCs
 gap <- gs_url(link)
 # grava o objecto chamado tipo_anestesia_regex
 gap %>% gs_read(ws=1) -> tipo_anestesia_regex
+tipo_anestesia_regex$idx <- 1:nrow(tipo_anestesia_regex)
 rm(gap)
 rm(link)
 

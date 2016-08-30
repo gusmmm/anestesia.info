@@ -5,5 +5,6 @@ link <- "https://docs.google.com/spreadsheets/d/1JWhsMqdOQq2b8bQnQW_atkTpOwqzTWf
 gap <- gs_url(link)
 # grava o objecto chamado patologia_regex
 gap %>% gs_read(ws=1) -> cirurgia_regex
+cirurgia_regex$idx <- 1:nrow(cirurgia_regex)
 rm(gap)
 rm(link)
