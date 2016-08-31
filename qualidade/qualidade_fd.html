@@ -122,8 +122,8 @@ $(document).ready(function () {
 
 <div id="analise-de-qualidade-dos-dados-extraidos-da-folha-com-os-dados-originais---fd" class="section level2">
 <h2>Analise de qualidade dos dados extraidos da folha com os dados originais - fd</h2>
-<pre><code>## [1] &quot;Numero de actos anestesicos: 32&quot;</code></pre>
-<pre><code>## [1] &quot;Numero de colunas: 19&quot;</code></pre>
+<pre><code>## [1] &quot;Numero de actos anestesicos: 60&quot;</code></pre>
+<pre><code>## [1] &quot;Numero de colunas: 23&quot;</code></pre>
 <pre><code>##  [1] &quot;Carimbo de data/hora&quot;                
 ##  [2] &quot;Especialidade&quot;                       
 ##  [3] &quot;Diagnóstico&quot;                         
@@ -142,177 +142,307 @@ $(document).ready(function () {
 ## [16] &quot;Alergias&quot;                            
 ## [17] &quot;ASA&quot;                                 
 ## [18] &quot;Duração da cirurgia&quot;                 
-## [19] &quot;id&quot;</code></pre>
+## [19] &quot;Bloqueio bilateral?&quot;                 
+## [20] &quot;Região&quot;                              
+## [21] &quot;Data&quot;                                
+## [22] &quot;Auxiliar&quot;                            
+## [23] &quot;id&quot;</code></pre>
 <pre><code>## [1] &quot;Numero de dados ausentes por coluna: &quot;</code></pre>
 <pre><code>##                 Carimbo de data/hora                        Especialidade 
-##                                    0                                    0 
+##                                   18                                    0 
 ##                          Diagnóstico                             Cirurgia 
 ##                                    0                                    0 
 ##                             Admissão                               Género 
 ##                                    0                                    0 
 ##                                Idade                     Patologia prévia 
-##                                    0                                    8 
-##                    Tipo de Anestesia                           Combinada? 
 ##                                    0                                   17 
+##                    Tipo de Anestesia                           Combinada? 
+##                                    0                                   42 
 ## Bloqueio de Nervos Periféricos/Plexo                            Via aérea 
-##                                   25                                    5 
+##                                   45                                   21 
 ##             Técnicas e monitorização             Acidentes e complicações 
-##                                   30                                   32 
+##                                   55                                   60 
 ##                                Notas                             Alergias 
-##                                   31                                   30 
+##                                   59                                   56 
 ##                                  ASA                  Duração da cirurgia 
 ##                                    2                                    0 
+##                  Bloqueio bilateral?                               Região 
+##                                   60                                   60 
+##                                 Data                             Auxiliar 
+##                                   60                                   60 
 ##                                   id 
 ##                                    0</code></pre>
 </div>
 <div id="patologia-previa" class="section level2">
 <h2>patologia previa</h2>
-<pre><code>##    id                                            conceito
-## 1   1                                              Anemia
-## 2   1                                                DPOC
-## 3   1                                    doença coronária
-## 4   2                                                DPOC
-## 5   2                                    Doença coronária
-## 6   2                                                 Dm2
-## 7   3                  Parkinson Periplagia Obesidade HTA
-## 8   4                                                DOAD
-## 9   5                                                DPOC
-## 10  5                                                 ICC
-## 11  5                                         EAM em 2014
-## 12  5                                                 Hta
-## 13  6                                              Anemia
-## 14  6                                                 DM2
-## 15  6                                                 HTA
-## 16  6                                               IC II
-## 17  6                                    Doença coronária
-## 18  6                                                  FA
-## 19  6                                                 PAC
-## 20  7                                           Depressão
-## 21  7                                      Hipotiroidismo
-## 22  8                                                &lt;NA&gt;
-## 23  9                                                 DM2
-## 24  9                                                 ICC
-## 25  9                                                 HTA
-## 26  9                                        Ex-tabagismo
-## 27 10                                        Dislipidemia
-## 28 11                                      Hipotiroidismo
-## 29 12                                           Tabagismo
-## 30 12                                          Alcoolismo
-## 31 12                                                 HTA
-## 32 13                                                &lt;NA&gt;
-## 33 14                                                &lt;NA&gt;
-## 34 15                                                 DM2
-## 35 15                              doença cerebrovascular
-## 36 15                                                 HTA
-## 37 15                                           tabagismo
-## 38 16                                                 HTA
-## 39 16                                           Depressão
-## 40 16                                           Ansiedade
-## 41 17                                                &lt;NA&gt;
-## 42 18                                      Hipotiroidismo
-## 43 19                                                 DM2
-## 44 19                                           Tabagismo
-## 45 19                                    Doença coronária
-## 46 19                                        Dislipidemia
-## 47 20                                                 EAM
-## 48 20                                           tabagismo
-## 49 20                                                DPOC
-## 50 20                                                 DM2
-## 51 21                                                 HTA
-## 52 21                                        Dislipidemia
-## 53 22                                                 DM2
-## 54 22                                                 DRC
-## 55 22                                                 ICC
-## 56 22                                                DPOC
-## 57 22                                        DIslipidemia
-## 58 22                                          Alcoolismo
-## 59 23                                 Síndrome depressivo
-## 60 24                                                &lt;NA&gt;
-## 61 25                                                 DM2
-## 62 25                                           Tabagismo
-## 63 25                     Insuficiência venosa periférica
-## 64 26                                           Ansiedade
-## 65 27                                                &lt;NA&gt;
-## 66 28 Doença hepática alcoólica crónica. DPOC. DII. MODS.
-## 67 29                                                &lt;NA&gt;
-## 68 30                                                &lt;NA&gt;
-## 69 31                                                DPOC
-## 70 31                                           tabagismo
-## 71 31                                          alcoolismo
-## 72 32                                                 HTA
-##                                                hits
-## 1                                            anemia
-## 2                                              DPCO
-## 3                                  doenca_coronaria
-## 4                                              DPCO
-## 5                                  doenca_coronaria
-## 6                           diabetes_mellitus_tipo2
-## 7  hipertensao_arterial : obesidade : parkinsonismo
-## 8                doença_osteoarticular_degenerativa
-## 9                                              DPCO
-## 10                insuf_cardiaca_congestiva_cronica
-## 11                          enfarte_agudo_miocardio
-## 12                             hipertensao_arterial
-## 13                                           anemia
-## 14                          diabetes_mellitus_tipo2
-## 15                             hipertensao_arterial
-## 16                                                 
-## 17                                 doenca_coronaria
-## 18                                                 
-## 19                                                 
-## 20                                                 
-## 21                                                 
-## 22                                             &lt;NA&gt;
-## 23                          diabetes_mellitus_tipo2
-## 24                insuf_cardiaca_congestiva_cronica
-## 25                             hipertensao_arterial
-## 26                                                 
-## 27                                                 
-## 28                                                 
-## 29                                                 
-## 30                                                 
-## 31                             hipertensao_arterial
-## 32                                             &lt;NA&gt;
-## 33                                             &lt;NA&gt;
-## 34                          diabetes_mellitus_tipo2
-## 35                                                 
-## 36                             hipertensao_arterial
-## 37                                                 
-## 38                             hipertensao_arterial
-## 39                                                 
-## 40                                                 
-## 41                                             &lt;NA&gt;
-## 42                                                 
-## 43                          diabetes_mellitus_tipo2
-## 44                                                 
-## 45                                 doenca_coronaria
-## 46                                                 
-## 47                          enfarte_agudo_miocardio
-## 48                                                 
-## 49                                             DPCO
-## 50                          diabetes_mellitus_tipo2
-## 51                             hipertensao_arterial
-## 52                                                 
-## 53                          diabetes_mellitus_tipo2
-## 54                                                 
-## 55                insuf_cardiaca_congestiva_cronica
-## 56                                             DPCO
-## 57                                                 
-## 58                                                 
-## 59                                                 
-## 60                                             &lt;NA&gt;
-## 61                          diabetes_mellitus_tipo2
-## 62                                                 
-## 63                                                 
-## 64                                                 
-## 65                                             &lt;NA&gt;
-## 66                                             DPCO
-## 67                                             &lt;NA&gt;
-## 68                                             &lt;NA&gt;
-## 69                                             DPCO
-## 70                                                 
-## 71                                                 
-## 72                             hipertensao_arterial</code></pre>
+<pre><code>##     id                                            conceito
+## 1    1                                              Anemia
+## 2    1                                                DPOC
+## 3    1                                    doença coronária
+## 4    2                                                DPOC
+## 5    2                                    Doença coronária
+## 6    2                                                 Dm2
+## 7    3                  Parkinson Periplagia Obesidade HTA
+## 8    4                                                DOAD
+## 9    5                                                DPOC
+## 10   5                                                 ICC
+## 11   5                                         EAM em 2014
+## 12   5                                                 Hta
+## 13   6                                              Anemia
+## 14   6                                                 DM2
+## 15   6                                                 HTA
+## 16   6                                               IC II
+## 17   6                                    Doença coronária
+## 18   6                                                  FA
+## 19   6                                                 PAC
+## 20   7                                           Depressão
+## 21   7                                      Hipotiroidismo
+## 22   8                                                &lt;NA&gt;
+## 23   9                                                 DM2
+## 24   9                                                 ICC
+## 25   9                                                 HTA
+## 26   9                                        Ex-tabagismo
+## 27  10                                        Dislipidemia
+## 28  11                                      Hipotiroidismo
+## 29  12                                           Tabagismo
+## 30  12                                          Alcoolismo
+## 31  12                                                 HTA
+## 32  13                                                &lt;NA&gt;
+## 33  14                                                &lt;NA&gt;
+## 34  15                                                 DM2
+## 35  15                              doença cerebrovascular
+## 36  15                                                 HTA
+## 37  15                                           tabagismo
+## 38  16                                                 HTA
+## 39  16                                           Depressão
+## 40  16                                           Ansiedade
+## 41  17                                                &lt;NA&gt;
+## 42  18                                      Hipotiroidismo
+## 43  19                                                 DM2
+## 44  19                                           Tabagismo
+## 45  19                                    Doença coronária
+## 46  19                                        Dislipidemia
+## 47  20                                                 EAM
+## 48  20                                           tabagismo
+## 49  20                                                DPOC
+## 50  20                                                 DM2
+## 51  21                                                 HTA
+## 52  21                                        Dislipidemia
+## 53  22                                                 DM2
+## 54  22                                                 DRC
+## 55  22                                                 ICC
+## 56  22                                                DPOC
+## 57  22                                        DIslipidemia
+## 58  22                                          Alcoolismo
+## 59  23                                 Síndrome depressivo
+## 60  24                                                &lt;NA&gt;
+## 61  25                                                 DM2
+## 62  25                                           Tabagismo
+## 63  25                     Insuficiência venosa periférica
+## 64  26                                           Ansiedade
+## 65  27                                                &lt;NA&gt;
+## 66  28 Doença hepática alcoólica crónica. DPOC. DII. MODS.
+## 67  29                                                &lt;NA&gt;
+## 68  30                                                &lt;NA&gt;
+## 69  31                                                DPOC
+## 70  31                                           tabagismo
+## 71  31                                          alcoolismo
+## 72  32                                                 HTA
+## 73  33                                    Síndrome de Frey
+## 74  34                                                &lt;NA&gt;
+## 75  35                                        Dislipidemia
+## 76  35                                           obesidade
+## 77  36                                           Obesidade
+## 78  36                                                Asma
+## 79  37                                                 HTA
+## 80  37                                                 DM2
+## 81  37                                                SAOS
+## 82  38                                        Dislipidemia
+## 83  38                                                DPOC
+## 84  38                                           Obesidade
+## 85  38                                                 DM2
+## 86  38                                                 HTA
+## 87  38                                                  IC
+## 88  38                                    Doença coronária
+## 89  39                                     Hipertiroidismo
+## 90  39                                          Hepatite C
+## 91  39                                          Alcoolismo
+## 92  40                                                &lt;NA&gt;
+## 93  41                                                Asma
+## 94  42                                                 HIV
+## 95  42                                           Obesidade
+## 96  42                                                DPOC
+## 97  42                                        Dislipidemia
+## 98  42                                                 DM2
+## 99  43                                        Dislipidemia
+## 100 44                                                 DM2
+## 101 44                                                DPOC
+## 102 44                                              Anemia
+## 103 44                                                 HTA
+## 104 44                                                  IC
+## 105 45                        Anestesia Geral Dissociativa
+## 106 46                                           Obesidade
+## 107 46                                        Dislipidemia
+## 108 47                                                 DM2
+## 109 47                                              Anemia
+## 110 47                                                DOAD
+## 111 47                                                  IC
+## 112 48                                           Obesidade
+## 113 49                                                  IC
+## 114 49                                                DOAD
+## 115 50                                                &lt;NA&gt;
+## 116 51                                                &lt;NA&gt;
+## 117 52                                                &lt;NA&gt;
+## 118 53                                                &lt;NA&gt;
+## 119 54                                                  IC
+## 120 54                                                DOAD
+## 121 55                                                 DM2
+## 122 55                                           Obesidade
+## 123 55                                        Dislipidemia
+## 124 55                                                  IC
+## 125 55                                                DPOC
+## 126 55                                    Doença coronária
+## 127 56                                                &lt;NA&gt;
+## 128 57                                                &lt;NA&gt;
+## 129 58                                          Alcoolismo
+## 130 59                                                &lt;NA&gt;
+## 131 60                                                SAOS
+## 132 60                                                 DM2
+## 133 60                                           Obesidade
+##                                                 hits     n_hits
+## 1                                             anemia          1
+## 2                                               DPCO          5
+## 3                                   doenca_coronaria          3
+## 4                                               DPCO          5
+## 5                                   doenca_coronaria          3
+## 6                            diabetes_mellitus_tipo2          2
+## 7   hipertensao_arterial : obesidade : parkinsonismo 7 : 9 : 10
+## 8                 doença_osteoarticular_degenerativa          4
+## 9                                               DPCO          5
+## 10                 insuf_cardiaca_congestiva_cronica          8
+## 11                           enfarte_agudo_miocardio          6
+## 12                              hipertensao_arterial          7
+## 13                                            anemia          1
+## 14                           diabetes_mellitus_tipo2          2
+## 15                              hipertensao_arterial          7
+## 16                                                             
+## 17                                  doenca_coronaria          3
+## 18                                                             
+## 19                                                             
+## 20                                                             
+## 21                                                             
+## 22                                              &lt;NA&gt;       &lt;NA&gt;
+## 23                           diabetes_mellitus_tipo2          2
+## 24                 insuf_cardiaca_congestiva_cronica          8
+## 25                              hipertensao_arterial          7
+## 26                                                             
+## 27                                                             
+## 28                                                             
+## 29                                                             
+## 30                                                             
+## 31                              hipertensao_arterial          7
+## 32                                              &lt;NA&gt;       &lt;NA&gt;
+## 33                                              &lt;NA&gt;       &lt;NA&gt;
+## 34                           diabetes_mellitus_tipo2          2
+## 35                                                             
+## 36                              hipertensao_arterial          7
+## 37                                                             
+## 38                              hipertensao_arterial          7
+## 39                                                             
+## 40                                                             
+## 41                                              &lt;NA&gt;       &lt;NA&gt;
+## 42                                                             
+## 43                           diabetes_mellitus_tipo2          2
+## 44                                                             
+## 45                                  doenca_coronaria          3
+## 46                                                             
+## 47                           enfarte_agudo_miocardio          6
+## 48                                                             
+## 49                                              DPCO          5
+## 50                           diabetes_mellitus_tipo2          2
+## 51                              hipertensao_arterial          7
+## 52                                                             
+## 53                           diabetes_mellitus_tipo2          2
+## 54                                                             
+## 55                 insuf_cardiaca_congestiva_cronica          8
+## 56                                              DPCO          5
+## 57                                                             
+## 58                                                             
+## 59                                                             
+## 60                                              &lt;NA&gt;       &lt;NA&gt;
+## 61                           diabetes_mellitus_tipo2          2
+## 62                                                             
+## 63                                                             
+## 64                                                             
+## 65                                              &lt;NA&gt;       &lt;NA&gt;
+## 66                                              DPCO          5
+## 67                                              &lt;NA&gt;       &lt;NA&gt;
+## 68                                              &lt;NA&gt;       &lt;NA&gt;
+## 69                                              DPCO          5
+## 70                                                             
+## 71                                                             
+## 72                              hipertensao_arterial          7
+## 73                                                             
+## 74                                              &lt;NA&gt;       &lt;NA&gt;
+## 75                                                             
+## 76                                         obesidade          9
+## 77                                         obesidade          9
+## 78                                                             
+## 79                              hipertensao_arterial          7
+## 80                           diabetes_mellitus_tipo2          2
+## 81                                                             
+## 82                                                             
+## 83                                              DPCO          5
+## 84                                         obesidade          9
+## 85                           diabetes_mellitus_tipo2          2
+## 86                              hipertensao_arterial          7
+## 87                                                             
+## 88                                  doenca_coronaria          3
+## 89                                                             
+## 90                                                             
+## 91                                                             
+## 92                                              &lt;NA&gt;       &lt;NA&gt;
+## 93                                                             
+## 94                                                             
+## 95                                         obesidade          9
+## 96                                              DPCO          5
+## 97                                                             
+## 98                           diabetes_mellitus_tipo2          2
+## 99                                                             
+## 100                          diabetes_mellitus_tipo2          2
+## 101                                             DPCO          5
+## 102                                           anemia          1
+## 103                             hipertensao_arterial          7
+## 104                                                            
+## 105                                                            
+## 106                                        obesidade          9
+## 107                                                            
+## 108                          diabetes_mellitus_tipo2          2
+## 109                                           anemia          1
+## 110               doença_osteoarticular_degenerativa          4
+## 111                                                            
+## 112                                        obesidade          9
+## 113                                                            
+## 114               doença_osteoarticular_degenerativa          4
+## 115                                             &lt;NA&gt;       &lt;NA&gt;
+## 116                                             &lt;NA&gt;       &lt;NA&gt;
+## 117                                             &lt;NA&gt;       &lt;NA&gt;
+## 118                                             &lt;NA&gt;       &lt;NA&gt;
+## 119                                                            
+## 120               doença_osteoarticular_degenerativa          4
+## 121                          diabetes_mellitus_tipo2          2
+## 122                                        obesidade          9
+## 123                                                            
+## 124                                                            
+## 125                                             DPCO          5
+## 126                                 doenca_coronaria          3
+## 127                                             &lt;NA&gt;       &lt;NA&gt;
+## 128                                             &lt;NA&gt;       &lt;NA&gt;
+## 129                                                            
+## 130                                             &lt;NA&gt;       &lt;NA&gt;
+## 131                                                            
+## 132                          diabetes_mellitus_tipo2          2
+## 133                                        obesidade          9</code></pre>
 </div>
 <div id="tipo_anestesia" class="section level2">
 <h2>tipo_anestesia</h2>
@@ -357,151 +487,291 @@ $(document).ready(function () {
 ## 38 30                                  BSA
 ## 39 31           Anestesia Geral Balanceada
 ## 40 32           Anestesia Geral Balanceada
-##                                            hits
-## 1                                           BSA
-## 2  bloqueio_nervos_perifericos : bloqueio_plexo
-## 3                    anestesia_geral_balanceada
-## 4                               epidural_lombar
-## 5                                           MAC
-## 6                                           BSA
-## 7  bloqueio_nervos_perifericos : bloqueio_plexo
-## 8                                           BSA
-## 9  bloqueio_nervos_perifericos : bloqueio_plexo
-## 10 bloqueio_nervos_perifericos : bloqueio_plexo
-## 11                   anestesia_geral_balanceada
-## 12 bloqueio_nervos_perifericos : bloqueio_plexo
-## 13                   anestesia_geral_balanceada
-## 14                                          MAC
-## 15                                             
-## 16                   anestesia_geral_balanceada
-## 17 bloqueio_nervos_perifericos : bloqueio_plexo
-## 18                   anestesia_geral_balanceada
-## 19                   anestesia_geral_balanceada
-## 20                   anestesia_geral_balanceada
-## 21                   anestesia_geral_balanceada
-## 22 bloqueio_nervos_perifericos : bloqueio_plexo
-## 23                   anestesia_geral_balanceada
-## 24                   anestesia_geral_balanceada
-## 25                   anestesia_geral_balanceada
-## 26                   anestesia_geral_balanceada
-## 27                   anestesia_geral_balanceada
-## 28                   anestesia_geral_balanceada
-## 29                                             
-## 30                                          MAC
-## 31                   anestesia_geral_balanceada
-## 32                   anestesia_geral_balanceada
-## 33                   anestesia_geral_balanceada
-## 34                                             
-## 35                   anestesia_geral_balanceada
-## 36                   anestesia_geral_balanceada
-## 37                                          BSA
-## 38                                          BSA
-## 39                   anestesia_geral_balanceada
-## 40                   anestesia_geral_balanceada</code></pre>
+## 41 33           Anestesia Geral Balanceada
+## 42 34           Anestesia Geral Balanceada
+## 43 35           Anestesia Geral Balanceada
+## 44 36                           Sequencial
+## 45 37           Anestesia Geral Balanceada
+## 46 38                                  MAC
+## 47 39           Anestesia Geral Balanceada
+## 48 40           Anestesia Geral Balanceada
+## 49 41           Anestesia Geral Balanceada
+## 50 42                              Sedação
+## 51 43           Anestesia Total Endovenosa
+## 52 44           Anestesia Total Endovenosa
+## 53 45                                  Não
+## 54 46                                  BSA
+## 55 46 Bloqueio de Nervos Periféricos/Plexo
+## 56 47                                  BSA
+## 57 47 Bloqueio de Nervos Periféricos/Plexo
+## 58 48                                  BSA
+## 59 48 Bloqueio de Nervos Periféricos/Plexo
+## 60 49                                  BSA
+## 61 49 Bloqueio de Nervos Periféricos/Plexo
+## 62 50                                  BSA
+## 63 51                                  BSA
+## 64 52                                  BSA
+## 65 53                                  BSA
+## 66 54                                  BSA
+## 67 54 Bloqueio de Nervos Periféricos/Plexo
+## 68 55           Anestesia Geral Balanceada
+## 69 56           Anestesia Geral Balanceada
+## 70 57           Anestesia Geral Balanceada
+## 71 58                              Sedação
+## 72 58 Bloqueio de Nervos Periféricos/Plexo
+## 73 59                                  BSA
+## 74 59 Bloqueio de Nervos Periféricos/Plexo
+## 75 60 Bloqueio de Nervos Periféricos/Plexo
+##                                            hits n_hits
+## 1                                           BSA      4
+## 2  bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 3                    anestesia_geral_balanceada      1
+## 4                               epidural_lombar      5
+## 5                                           MAC      6
+## 6                                           BSA      4
+## 7  bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 8                                           BSA      4
+## 9  bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 10 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 11                   anestesia_geral_balanceada      1
+## 12 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 13                   anestesia_geral_balanceada      1
+## 14                                          MAC      6
+## 15                                                    
+## 16                   anestesia_geral_balanceada      1
+## 17 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 18                   anestesia_geral_balanceada      1
+## 19                   anestesia_geral_balanceada      1
+## 20                   anestesia_geral_balanceada      1
+## 21                   anestesia_geral_balanceada      1
+## 22 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 23                   anestesia_geral_balanceada      1
+## 24                   anestesia_geral_balanceada      1
+## 25                   anestesia_geral_balanceada      1
+## 26                   anestesia_geral_balanceada      1
+## 27                   anestesia_geral_balanceada      1
+## 28                   anestesia_geral_balanceada      1
+## 29                                                    
+## 30                                          MAC      6
+## 31                   anestesia_geral_balanceada      1
+## 32                   anestesia_geral_balanceada      1
+## 33                   anestesia_geral_balanceada      1
+## 34                                                    
+## 35                   anestesia_geral_balanceada      1
+## 36                   anestesia_geral_balanceada      1
+## 37                                          BSA      4
+## 38                                          BSA      4
+## 39                   anestesia_geral_balanceada      1
+## 40                   anestesia_geral_balanceada      1
+## 41                   anestesia_geral_balanceada      1
+## 42                   anestesia_geral_balanceada      1
+## 43                   anestesia_geral_balanceada      1
+## 44                                                    
+## 45                   anestesia_geral_balanceada      1
+## 46                                          MAC      6
+## 47                   anestesia_geral_balanceada      1
+## 48                   anestesia_geral_balanceada      1
+## 49                   anestesia_geral_balanceada      1
+## 50                                                    
+## 51                                                    
+## 52                                                    
+## 53                                                    
+## 54                                          BSA      4
+## 55 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 56                                          BSA      4
+## 57 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 58                                          BSA      4
+## 59 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 60                                          BSA      4
+## 61 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 62                                          BSA      4
+## 63                                          BSA      4
+## 64                                          BSA      4
+## 65                                          BSA      4
+## 66                                          BSA      4
+## 67 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 68                   anestesia_geral_balanceada      1
+## 69                   anestesia_geral_balanceada      1
+## 70                   anestesia_geral_balanceada      1
+## 71                                                    
+## 72 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 73                                          BSA      4
+## 74 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3
+## 75 bloqueio_nervos_perifericos : bloqueio_plexo  2 : 3</code></pre>
 </div>
 <div id="alr" class="section level2">
 <h2>ALR</h2>
-<pre><code>##    id                      conceito                   hits
-## 1   1                 Nervo Femoral          femoral_nervo
-## 2   1 Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo
-## 3   2                          &lt;NA&gt;                   &lt;NA&gt;
-## 4   3                          &lt;NA&gt;                   &lt;NA&gt;
-## 5   4                 Nervo Femoral          femoral_nervo
-## 6   4 Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo
-## 7   5                 Nervo Femoral          femoral_nervo
-## 8   5 Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo
-## 9   6                 Nervo Femoral          femoral_nervo
-## 10  6 Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo
-## 11  6         Nervo Gluteo Superior                       
-## 12  7                       PECS II                       
-## 13  8                          &lt;NA&gt;                   &lt;NA&gt;
-## 14  9                          &lt;NA&gt;                   &lt;NA&gt;
-## 15 10                          &lt;NA&gt;                   &lt;NA&gt;
-## 16 11                           TAP                       
-## 17 12                          &lt;NA&gt;                   &lt;NA&gt;
-## 18 13                          &lt;NA&gt;                   &lt;NA&gt;
-## 19 14                          &lt;NA&gt;                   &lt;NA&gt;
-## 20 15                 Nervo Ciático                       
-## 21 15            abordagem poplítea                       
-## 22 16                          &lt;NA&gt;                   &lt;NA&gt;
-## 23 17                          &lt;NA&gt;                   &lt;NA&gt;
-## 24 18                          &lt;NA&gt;                   &lt;NA&gt;
-## 25 19                          &lt;NA&gt;                   &lt;NA&gt;
-## 26 20                          &lt;NA&gt;                   &lt;NA&gt;
-## 27 21                          &lt;NA&gt;                   &lt;NA&gt;
-## 28 22                          &lt;NA&gt;                   &lt;NA&gt;
-## 29 23                          &lt;NA&gt;                   &lt;NA&gt;
-## 30 24                          &lt;NA&gt;                   &lt;NA&gt;
-## 31 25                          &lt;NA&gt;                   &lt;NA&gt;
-## 32 26                          &lt;NA&gt;                   &lt;NA&gt;
-## 33 27                          &lt;NA&gt;                   &lt;NA&gt;
-## 34 28                          &lt;NA&gt;                   &lt;NA&gt;
-## 35 29                          &lt;NA&gt;                   &lt;NA&gt;
-## 36 30                          &lt;NA&gt;                   &lt;NA&gt;
-## 37 31                          &lt;NA&gt;                   &lt;NA&gt;
-## 38 32                          &lt;NA&gt;                   &lt;NA&gt;</code></pre>
+<pre><code>##    id                         conceito                   hits n_hits
+## 1   1                    Nervo Femoral          femoral_nervo      3
+## 2   1    Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo      2
+## 3   2                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 4   3                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 5   4                    Nervo Femoral          femoral_nervo      3
+## 6   4    Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo      2
+## 7   5                    Nervo Femoral          femoral_nervo      3
+## 8   5    Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo      2
+## 9   6                    Nervo Femoral          femoral_nervo      3
+## 10  6    Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo      2
+## 11  6            Nervo Gluteo Superior       gluteo_sup_nervo      4
+## 12  7                          PECS II                PECS_II      6
+## 13  7                          PECS II                PECS_II      6
+## 14  8                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 15  9                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 16 10                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 17 11                    TAP bilateral                    TAP      8
+## 18 12                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 19 13                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 20 14                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 21 15                    Nervo Ciático          ciatico_nervo      1
+## 22 15               abordagem poplítea popliteo_ciatico_nervo      7
+## 23 16                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 24 17                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 25 18                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 26 19                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 27 20                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 28 21                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 29 22                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 30 23                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 31 24                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 32 25                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 33 26                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 34 27                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 35 28                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 36 29                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 37 30                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 38 31                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 39 32                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 40 33                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 41 34                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 42 35                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 43 36                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 44 37                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 45 38                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 46 39                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 47 40                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 48 41                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 49 42                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 50 43                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 51 44                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 52 45                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 53 46                    Nervo Femoral          femoral_nervo      3
+## 54 46    Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo      2
+## 55 47                    Nervo Femoral          femoral_nervo      3
+## 56 47    Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo      2
+## 57 48                    Nervo Femoral          femoral_nervo      3
+## 58 48    Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo      2
+## 59 49                    Nervo Femoral          femoral_nervo      3
+## 60 49    Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo      2
+## 61 50                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 62 51                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 63 52                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 64 53                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 65 54                    Nervo Femoral          femoral_nervo      3
+## 66 54    Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo      2
+## 67 55                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 68 56                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 69 57                             &lt;NA&gt;                   &lt;NA&gt;   &lt;NA&gt;
+## 70 58                    Nervo Ciático          ciatico_nervo      1
+## 71 58              abordagem subglútea                              
+## 72 58                    Nervo femoral          femoral_nervo      3
+## 73 58    Nervo Cutâneo Lateral da Coxa cutaneo_lat_coxa_nervo      2
+## 74 58 Nervo Obturador (ramo posterior)                              
+## 75 59                              BSA                              
+## 76 59                    Nervo Femoral          femoral_nervo      3
+## 77 59                    Nervo Ciático          ciatico_nervo      1
+## 78 59              abordagem subglútea                              
+## 79 60       Bloqueio do plexo braquial                              
+## 80 60                 abordagem axilar</code></pre>
 <pre><code>## [1] &quot;Especialidade&quot;</code></pre>
 <pre><code>## 
-##    Cirurgia Geral Cirurgia Plástica       Obstetrícia         Ortopedia 
-##                 3                23                 2                 4</code></pre>
+##         Cirurgia Geral      Cirurgia Plástica            Obstetrícia 
+##                      6                     35                      6 
+##              Ortopedia Úlcera crónica da pele 
+##                     12                      1</code></pre>
 <pre><code>## [1] &quot;Diagnóstico&quot;</code></pre>
 <pre><code>## 
-##                         Adiposidade localizada 
-##                                              4 
-## Carcinoma de células basais do membro inferior 
-##                                              1 
-## Carcinoma de células basais do membro superior 
-##                                              1 
-##                Cicatriz abdominal hipertrófica 
-##                                              1 
-##                                # colo do femur 
-##                                              1 
-##                                      # da face 
-##                                              1 
-##                                       Fournier 
-##                                              1 
-##                                 Fratura de PTA 
-##                                              1 
-##                                    Hidradenite 
-##                                              1 
-##                             Hidradenite axilar 
-##                                              1 
-##                            Hipertrofia da mama 
-##                                              2 
-##                            Hipertrofia mamária 
-##                                              1 
-##                  Incompatibilidade fetopélvica 
-##                                              1 
-##                           isquemia mesentérica 
-##                                              1 
-##                      Osteonecrose da mandíbula 
-##                                              1 
-##                             Queimadura 3º grau 
-##                                              1 
-##                 Queimadura da região abdominal 
-##                                              1 
-##                         Status pós-mastectomia 
-##                                              1 
-##                      Status pós-op mastectomia 
-##                                              1 
-##            Status pós-op rotura de víscera oca 
-##                                              1 
-##                 Trabalho de parto estacionário 
-##                                              1 
-##                                 # trocanterica 
-##                                              1 
-##                                 # trocantérica 
-##                                              1 
-##                                  Tumor da pele 
-##                                              1 
-##                  Tumor maligno da mucosa jugal 
-##                                              1 
-##                Tumor maligno do lábio inferior 
-##                                              1 
-##                         Úlcera crónica da pele 
-##                                              1 
-##                   Úlcera de membros inferiores 
-##                                              1</code></pre>
+##                           Adiposidade localizada 
+##                                                5 
+##                         Angioma de braço direito 
+##                                                1 
+##                                 Apendicite aguda 
+##                                                2 
+##   Carcinoma de células basais do membro inferior 
+##                                                1 
+##   Carcinoma de células basais do membro superior 
+##                                                1 
+##           Carcinoma de células escamosas da pele 
+##                                                1 
+##                                 Cesareana prévia 
+##                                                1 
+##                  Cicatriz abdominal hipertrófica 
+##                                                1 
+##                                  # colo do femur 
+##                                                6 
+##                                        # da face 
+##                                                1 
+## Desbridamento excisional + Enxerto livre de pele 
+##                                                1 
+##                                 Esfacelo do dedo 
+##                                                1 
+##                  Estado fetal não tranquilizador 
+##                                                1 
+##                                         Fournier 
+##                                                1 
+##                                   Fratura de PTA 
+##                                                1 
+##                                      Hidradenite 
+##                                                1 
+##                               Hidradenite axilar 
+##                                                1 
+##                      Higroma cístico do cotovelo 
+##                                                2 
+##                              Hipertrofia da mama 
+##                                                2 
+##                              Hipertrofia mamária 
+##                                                1 
+##                    Incompatibilidade fetopélvica 
+##                                                3 
+##                             isquemia mesentérica 
+##                                                2 
+##                      Lesão cutânea pré-auricular 
+##                                                1 
+##                                # malar e maxilar 
+##                                                1 
+##                        Osteonecrose da mandíbula 
+##                                                2 
+##                               Queimadura 3º grau 
+##                                                1 
+##                   Queimadura da região abdominal 
+##                                                1 
+##                   Status pós-hemimandibulectomia 
+##                                                1 
+##                           Status pós-mastectomia 
+##                                                2 
+##                        Status pós-op mastectomia 
+##                                                2 
+##              Status pós-op rotura de víscera oca 
+##                                                1 
+##                   Trabalho de parto estacionário 
+##                                                1 
+##                                    # trimaleolar 
+##                                                2 
+##                                   # trocanterica 
+##                                                1 
+##                                   # trocantérica 
+##                                                1 
+##             Tumor benigno de gânglios linfáticos 
+##                                                1 
+##                                    Tumor da pele 
+##                                                1 
+##                    Tumor maligno da mucosa jugal 
+##                                                1 
+##                  Tumor maligno do lábio inferior 
+##                                                1 
+##                           Úlcera crónica da pele 
+##                                                1 
+##                     Úlcera de membros inferiores 
+##                                                1</code></pre>
 <pre><code>## [1] &quot;Cirurgia&quot;</code></pre>
 <pre><code>## 
 ##                                                                                                               7S 
@@ -512,8 +782,14 @@ $(document).ready(function () {
 ##                                                                                                                1 
 ##                                                                                                  Adbominoplastia 
 ##                                                                                                                1 
-##                                                                                                        Cesariana 
+##                                                                                    Adominoplastia + herniorrafia 
+##                                                                                                                1 
+##                                                                                                   Apendicectomia 
 ##                                                                                                                2 
+##                                                                                                        Cesariana 
+##                                                                                                                6 
+##                                                                                             Correção de esfacelo 
+##                                                                                                                1 
 ##                                                    Dermolipectomia abdominal + avançamento de enxerto pediculado 
 ##                                                                                                                1 
 ##                                                                           Desbridamento excisional de queimadura 
@@ -526,10 +802,16 @@ $(document).ready(function () {
 ##                                                                                                                1 
 ##                                                                   Enxerto de gordura na pele e tecido subcutâneo 
 ##                                                                                                                1 
+##                                                                     Enxerto de gordura para reconstrução mamária 
+##                                                                                                                1 
 ##                                                                                            Enxerto livre de pele 
-##                                                                                                                1 
+##                                                                                                                2 
 ##                                                                                                          Excisão 
+##                                                                                                                2 
+##                                                                            Excisão de gânglio linfático profundo 
 ##                                                                                                                1 
+##                                                                                               Excisão de higroma 
+##                                                                                                                2 
 ##                                                Excisão de parte da boca e disseção radical de gânglios cervicais 
 ##                                                                                                                1 
 ##                                                                                     Excisão + enxerto pediculado 
@@ -538,7 +820,11 @@ $(document).ready(function () {
 ##                                                                                                                1 
 ##                                             Excisão radical de lesão da pele + avançamento de enxerto pediculado 
 ##                                                                                                                1 
+##                                                                          Excisão radical e reparação com retalho 
+##                                                                                                                1 
 ##                                                                                          laparotomia exploradora 
+##                                                                                                                1 
+##                                                                                          Laparotomia exploradora 
 ##                                                                                                                1 
 ##                                                                                                    Limpeza vácuo 
 ##                                                                                                                1 
@@ -548,13 +834,23 @@ $(document).ready(function () {
 ##                                                                                                                2 
 ## Mamoplastia redutora unilateral + Retalho miocutâneo de grande dorsal + colocação de implante mamário unilateral 
 ##                                                                                                                1 
+##                                                                                                  OOS com cavilha 
+##                                                                                                                2 
+##                                                                                                       Programada 
+##                                                                                                                1 
 ##                                                                                                              PTA 
+##                                                                                                                6 
+##                                                                                             Reconstrução mamária 
 ##                                                                                                                1 
 ##                                                                                             Redução de # da face 
 ##                                                                                                                1 
-##                                                                      Retalho antebraquial e peroneal para a face 
+##                                                                          Redução fechada de # do malar e maxilar 
 ##                                                                                                                1 
+##                                                                      Retalho antebraquial e peroneal para a face 
+##                                                                                                                2 
 ##                                                                          Retalho da artéria epigástrica inferior 
+##                                                                                                                1 
+##                                                                                     Retalho peroneal para a face 
 ##                                                                                                                1 
 ##                                                          Revisão de cicatriz + avançamento de enxerto pediculado 
 ##                                                                                                                1 
@@ -564,48 +860,54 @@ $(document).ready(function () {
 ##                                                                                                                1</code></pre>
 <pre><code>## [1] &quot;Admissao&quot;</code></pre>
 <pre><code>## 
-## Programada    Urgente 
-##         23          9</code></pre>
+##  Emergente   Feminino Programada    Urgente 
+##          1          1         35         23</code></pre>
 <pre><code>## [1] &quot;Genero&quot;</code></pre>
 <pre><code>## 
-##  Feminino Masculino 
-##        20        12</code></pre>
+##   61a-75a  Feminino Masculino 
+##         1        38        21</code></pre>
 <pre><code>## [1] &quot;Idade&quot;</code></pre>
 <pre><code>## 
-## 12m-13a 13a-60a 61a-75a    &gt;75a 
-##       1      15      10       6</code></pre>
+##             12m-13a             13a-60a             61a-75a 
+##                   2                  31                  15 
+##                &gt;75a DPOC, PAC, ICC, EAM 
+##                  11                   1</code></pre>
 <pre><code>## [1] &quot;Combinada&quot;</code></pre>
 <pre><code>## 
 ## Não Sim 
-##   9   6</code></pre>
+##   7  11</code></pre>
 <pre><code>## [1] &quot;Via aérea&quot;</code></pre>
 <pre><code>## 
 ##                   Cânula nasal                         iGel 3 
-##                              1                              1 
+##                              1                              2 
 ##                         iGel 4                          LMA 3 
 ##                              1                              1 
 ##                          LMA 4                     LMA iGel 4 
+##                              3                              1 
+##                 Máscara facial               McCrath, TOT 7,5 
 ##                              1                              1 
-##                 Máscara facial                             MF 
-##                              1                              1 
-##                          TOT 7                        TOT 7,5 
-##                             10                              7 
-## TOT 7, Glidescope, Fibroscopio                          TOT 8 
-##                              1                              1</code></pre>
+##                             MF                          TOT 7 
+##                              1                             14 
+##                        TOT 7,5 TOT 7, Glidescope, Fibroscopio 
+##                              8                              1 
+##                          TOT 8                  Traqueostomia 
+##                              2                              2</code></pre>
 <pre><code>## [1] &quot;Técnicas e monitorizaçao&quot;</code></pre>
 <pre><code>## 
-## CVC jugular, Linha arterial radial                           Standard 
+##        CVC jugular, Linha arterial CVC jugular, Linha arterial radial 
+##                                  1                                  2 
+##                      CVC subclávio                           Standard 
 ##                                  1                                  1</code></pre>
 <pre><code>## [1] &quot;Acidentes e complicaçoes&quot;</code></pre>
 <pre><code>## &lt; table of extent 0 &gt;</code></pre>
 <pre><code>## [1] &quot;Alergias&quot;</code></pre>
 <pre><code>## 
-## Penicilina 
-##          2</code></pre>
+##             Ácaros Ácaros, Penicilina         Penicilina 
+##                  1                  1                  2</code></pre>
 <pre><code>## [1] &quot;ASA&quot;</code></pre>
 <pre><code>## 
-##  1  2  3  4 
-##  6 12 10  2</code></pre>
+##  1  2  3  4  5 
+## 10 27 17  3  1</code></pre>
 </div>
 
 

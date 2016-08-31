@@ -14,7 +14,7 @@
 # data frame com 2 colunas: id e conceito
 
 
-f_tab_id_conceito <- function(fic_dados,coluna,sep=","){
+f_tab_id_conceito <- function(fic_dados,coluna,sep=",|\\+"){
   
   #coluna
   
