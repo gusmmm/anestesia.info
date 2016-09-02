@@ -66,11 +66,14 @@ table(fd$ASA)
 ```
 
 ### CIRURGIAS
-```{r, echo=FALSE}
-data.frame(cirurgia$hits,cirurgia_regex$classe[as.numeric(cirurgia$n_hits)]) -> aa
-names(aa) <- c("conceito","classe")
-table(aa$conceito)
-table(aa$classe)
+```{r, results='asis', echo=FALSE}
+
+for(i in unique(cirurgia$especialidade)){
+  print(i)
+  a <- cirurgia[cirurgia$especialidade==i,]
+  a <- table(a$hits)
+  print(a)
+}
 
 ```
 

@@ -36,8 +36,10 @@ cirurgia <- f_tab_id_conceito(fic_dados = fd,coluna = "Cirurgia")
 source(paste0(dc,"carrega_regex_cirurgia.R"))
 cirurgia$hits <- f_cria_coluna_hits(cirurgia_regex$conceito,cirurgia_regex$exp_reg,cirurgia$conceito)
 cirurgia$n_hits <- f_cria_coluna_hits(cirurgia_regex$idx,cirurgia_regex$exp_reg,cirurgia$conceito)
+cirurgia$especialidade <- fd$Especialidade[cirurgia$id]
 # se a celula na coluna hits for em braco, copia o que esta na coluna conceito
 cirurgia$conceito[cirurgia$hits==""] -> cirurgia$hits[cirurgia$hits==""]
+cirurgia$classe <- cirurgia_regex$classe[as.numeric(cirurgia$n_hits)]
 
 # grava as tabelas
 save(patologia_previa,file = paste0(do,"patologia_previa.Rdata"))
