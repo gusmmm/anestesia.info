@@ -44,8 +44,7 @@ print("Especialidade")
 table(fd$Especialidade)
 print("Diagnóstico")
 table(fd$Diagnóstico)
-print("Cirurgia")
-table(fd$Cirurgia)
+
 print("Admissao")
 table(fd$Admissão)
 print("Genero")
@@ -64,5 +63,14 @@ print("Alergias")
 table(fd$Alergias)
 print("ASA")
 table(fd$ASA)
+```
+
+### CIRURGIAS
+```{r, echo=FALSE}
+data.frame(cirurgia$hits,cirurgia_regex$classe[as.numeric(cirurgia$n_hits)]) -> aa
+names(aa) <- c("conceito","classe")
+table(aa$conceito)
+table(aa$classe)
+
 ```
 
