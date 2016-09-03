@@ -1,5 +1,7 @@
 # grava ficheiros xlsx para analise manual
 
+library(xlsx)
+
 # ficheiro principal
 principal <- fd
 
@@ -14,4 +16,6 @@ principal$Notas <- NULL
 principal$`Técnicas e monitorização` <- NULL
 principal$`Acidentes e complicações` <- NULL
 principal$Alergias <- NULL
+
+write.xlsx(principal,paste0(do,"principal.xlsx"))
 
