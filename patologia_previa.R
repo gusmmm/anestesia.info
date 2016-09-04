@@ -1,6 +1,7 @@
 # transformação da tabela de patologia_previa
 # colunas - patologia 
 # resultados 0 e 1
+library(xlsx)
 
 pp <- patologia_previa
 pp$conceito <- NULL
@@ -17,6 +18,8 @@ a[1]  <- "id"
 names(pp) <- a
 
 pp[is.na(pp)] <- 0
+
+write.xlsx(pp,paste0(do,"patologia_previa.xlsx"))
 
 #### por classe de patologia
 
@@ -40,3 +43,5 @@ a[1]  <- "id"
 names(pp_classe) <- a
 
 pp_classe[is.na(pp_classe)] <- 0
+
+write.xlsx(pp_classe,paste0(do,"patologia_previa_classes.xlsx"))
