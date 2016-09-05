@@ -1,7 +1,9 @@
 # transformação da tabela de patologia_previa
 # colunas - patologia 
 # resultados 0 e 1
+source("iniciar.R")
 library(xlsx)
+load(paste0(do,"tudo.RData"))
 
 pp <- patologia_previa
 pp$conceito <- NULL
