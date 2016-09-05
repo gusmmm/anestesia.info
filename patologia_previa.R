@@ -21,7 +21,7 @@ names(pp) <- a
 
 pp[is.na(pp)] <- 0
 
-write.xlsx(pp,paste0(do,"patologia_previa.xlsx"))
+write.xlsx(pp,paste0(do,"patologia_previa.xlsx"),row.names = F)
 
 #### por classe de patologia
 
@@ -46,4 +46,4 @@ names(pp_classe) <- a
 
 pp_classe[is.na(pp_classe)] <- 0
 
-write.xlsx(pp_classe,paste0(do,"patologia_previa_classes.xlsx"))
+write.xlsx(pp_classe,paste0(do,"patologia_previa_classes.xlsx"),row.names = F)
