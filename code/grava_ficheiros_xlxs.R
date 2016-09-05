@@ -17,5 +17,6 @@ principal$`Técnicas e monitorização` <- NULL
 principal$`Acidentes e complicações` <- NULL
 principal$Alergias <- NULL
 
-write.xlsx(principal,paste0(do,"principal.xlsx"))
+
+write.xlsx(principal,paste0(do,"principal.xlsx"),row.names = F)
 
