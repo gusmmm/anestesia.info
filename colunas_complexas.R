@@ -3,6 +3,7 @@
 source("iniciar.R")
 source(paste0(dc,"fun_cria_tabela_colunas_complexas.R"))
 source(paste0(dc,"fun_regex.R"))
+library(xlsx)
 
 ### patologia_previa ###
 # cria a tabela patologia_previa
@@ -43,9 +44,13 @@ cirurgia$classe <- cirurgia_regex$classe[as.numeric(cirurgia$n_hits)]
 
 # grava as tabelas
 save(patologia_previa,file = paste0(do,"patologia_previa.Rdata"))
+write.xlsx(patologia_previa,paste0(do,"q_patologia_previa.xlsx"),row.names = F)
 save(tipo_anestesia,file = paste0(do,"tipo_anestesia.Rdata"))
+write.xlsx(tipo_anestesia,paste0(do,"q_tipo_anestesia.xlsx"),row.names = F)
 save(ALR,file = paste0(do,"ALR.Rdata"))
+write.xlsx(ALR,paste0(do,"q_ALR.xlsx"),row.names = F)
 save(cirurgia,file = paste0(do,"cirurgia.Rdata"))
+write.xlsx(cirurgia,paste0(do,"q_cirurgia.xlsx"),row.names = F)
 
 # grava o ambiente global gerado
 save.image(file=paste0(do,"tudo.RData"))
