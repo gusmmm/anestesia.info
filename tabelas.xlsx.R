@@ -5,6 +5,28 @@ source("iniciar.R")
 library(xlsx)
 load(paste0(do,"tudo.RData"))
 
+### ficheiro principal
+principal <- fd
+
+principal$`Carimbo de data/hora` <- NULL
+principal$Diagnóstico <- NULL
+principal$Cirurgia <- NULL
+principal$`Patologia prévia` <- NULL
+principal$`Bloqueio de Nervos Periféricos/Plexo` <- NULL
+principal$`Tipo de Anestesia`<- NULL
+principal$`Via aérea` <- NULL
+principal$Notas <- NULL
+principal$`Técnicas e monitorização` <- NULL
+principal$`Acidentes e complicações` <- NULL
+principal$Alergias <- NULL
+
+principal <- as.data.frame(principal)
+write.xlsx(principal,paste0(do,"principal.xlsx"),row.names = F)
+
+
+
+### patologia previa
+
 pp <- patologia_previa
 pp$conceito <- NULL
 pp$n_hits <- NULL
@@ -23,7 +45,7 @@ pp[is.na(pp)] <- 0
 
 write.xlsx(pp,paste0(do,"patologia_previa.xlsx"),row.names = F)
 
-#### por classe de patologia
+#### patologia previa por classe de patologia
 
 patologia_regex$classe[as.numeric(patologia_previa$n_hits)] -> por_classe
 
