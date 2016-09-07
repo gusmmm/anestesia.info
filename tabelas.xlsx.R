@@ -69,3 +69,4 @@ names(pp_classe) <- a
 pp_classe[is.na(pp_classe)] <- 0
 
 write.xlsx(pp_classe,paste0(do,"patologia_previa_classes.xlsx"),row.names = F)
+rm(a)
