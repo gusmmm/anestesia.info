@@ -3,6 +3,7 @@
 source("iniciar.R")
 source(paste0(dc,"fun_cria_tabela_colunas_complexas.R"))
 source(paste0(dc,"fun_regex.R"))
+source("code/carrega_ficheiros_iniciais.R")
 library(xlsx)
 
 ### patologia_previa ###

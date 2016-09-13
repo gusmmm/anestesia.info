@@ -2,4 +2,4 @@
 
 source("code/carrega_packages_iniciais.R")
 source("code/inicia_directorios_iniciais.R")
-source("code/carrega_ficheiros_iniciais.R")
+
